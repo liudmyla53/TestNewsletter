@@ -15,3 +15,4 @@ Ce que j'ai réalisé (Ce qui a été fait) :
     Migrations de base de données : J'ai utilisé les outils CLI (Add-Migration et Update-Database) pour gérer l'évolution du schéma de données.
 
     Documentation et Tests : J'ai utilisé Scalar (OpenAPI) pour documenter et tester mon API visuellement.
+
