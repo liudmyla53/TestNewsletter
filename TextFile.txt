@@ -1,0 +1,16 @@
+﻿Résumé du Projet UAA2
+Objectif : Créer une API de gestion de newsletter avec base de données et envoi d'emails.
+
+Ce que j'ai réalisé :
+
+    Architecture API : Développement d'un contrôleur NewsletterController avec les méthodes POST (inscription) et DELETE (désinscription).
+
+    Persistance (SQL Server) : Utilisation d'Entity Framework Core pour stocker les abonnés. J'ai configuré une conversion JSON pour sauvegarder la liste des thèmes choisis.
+
+    Logique métier (Idempotence) : Mon code vérifie si l'email existe déjà. Si oui, il met à jour les préférences au lieu de créer un doublon.
+
+    RGPD (Droit à l'oubli) : La méthode DELETE permet de supprimer définitivement toutes les données d'un utilisateur sur simple demande.
+
+    Service Email : Intégration de MailKit pour envoyer des confirmations automatiques via un serveur SMTP (Smtp4Dev).
+
+    Migrations : Utilisation des commandes dotnet ef migrations add et dotnet ef database update pour créer et mettre à jour le schéma de la base de données.
